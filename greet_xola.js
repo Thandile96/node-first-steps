@@ -15,26 +15,3 @@ figlet('Hello , Xola', function(err, data) {
     }
     console.log(data)
 });
-
-figlet.text('Hello , Xola', {
-    font: 'Ghost',
-    horizontalLayout: 'default',
-    verticalLayout: 'default',
-    width: 80,
-    whitespaceBreak: true
-}, function(err, data) {
-    if (err) {
-        console.log('Something went wrong...');
-        console.dir(err);
-        return;
-    }
-    console.log(data);
-});
-
-console.log(figlet.textSync('Hello, Xola', {
-    font: 'Ghost',
-    horizontalLayout: 'default',
-    verticalLayout: 'default',
-    width: 80,
-    whitespaceBreak: true
-}));
